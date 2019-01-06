@@ -12,5 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('/welcome');
 });
+
+Route::get('/trabajadores', 'Trabajador@index');
+Route::get('/tareas', 'TareaController@index');

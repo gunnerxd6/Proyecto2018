@@ -14,7 +14,7 @@ class TrabajadorController extends Controller
     public function index()
     {
         //
-         return view('\vistas\trabajadores');
+         return view('vistas.trabajadores');
     }
 
     /**

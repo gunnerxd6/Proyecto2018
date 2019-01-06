@@ -15,5 +15,5 @@ Route::get('/', function () {
     return view('/welcome');
 });
 
-Route::get('/trabajadores', 'Trabajador@index');
-Route::get('/tareas', 'TareaController@index');
+Route::resource('trabajadores','TrabajadorController');
+Route::resource('tareas','TareaController');

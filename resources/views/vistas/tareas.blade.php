@@ -6,8 +6,8 @@ Tareas
 
 @section('Contenido')
 <h2>Listado de tareas</h2>
-<br>
-<a class="btn btn-primary pull-right">Administrar trabajadores</a>
+
+<a href=" {{route ('trabajadores.index')}}" class="btn btn-primary pull-right">Administrar trabajadores</a>
 
 
 <br>

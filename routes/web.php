@@ -14,6 +14,6 @@
 Route::get('/', function () {
     return view('/welcome');
 });
-
+//se define el nombre en plurar de la entidad seguido del controlador de recursos al que se desea apuntar
 Route::resource('trabajadores','TrabajadorController');
 Route::resource('tareas','TareaController');

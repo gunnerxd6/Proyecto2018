@@ -54,6 +54,8 @@ class TareaController extends Controller
     public function show($id)
     {
         //
+        $tarea = Tarea::find($id);
+        return view('vistas.verTarea', compact('tarea'));
     }
 
     /**
@@ -88,5 +90,9 @@ class TareaController extends Controller
     public function destroy($id)
     {
         //
+        $tarea = Tarea::find($id);
+        $tarea->delete();
+
+        return back() -> with('info' , 'Tarea elimianda!');
     }
 }
